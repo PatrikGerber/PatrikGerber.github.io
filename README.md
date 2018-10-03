@@ -1,2 +1,1 @@
-# PatrikGerber.github.io
-A small personal website
+This is my small personal website, a work in progress. It is built on the default [brutalist](https://github.com/kwhaler/brutalist-jekyll) theme. 
