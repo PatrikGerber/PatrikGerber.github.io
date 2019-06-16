@@ -2,10 +2,13 @@
 title: Patrik Robert Gerber
 email: patrik.r.gerber@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  My small personal website. 
+  My personal website
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://PatrikGerber.github.io" # the base hostname & protocol for your site
 github_username:  PatrikGerber
 
 # Build settings
 markdown: kramdown
+
+# Google Analytics
+google_analytics: UA-142179739-1
