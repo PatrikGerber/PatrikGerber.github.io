@@ -23,6 +23,11 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
+::selection {
+  background: black;
+  color: white;
+}
+
 
 
 /**
@@ -90,7 +95,8 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
     color: $link-color;
-    text-decoration: underline;
+    // text-decoration: underline;
+    text-decoration: none;
 
     &:visited {
         color: darken($link-color, 15%);
@@ -98,15 +104,14 @@ a {
 
     &:hover {
         color: white;
-        text-decoration: underline;
         background-color: black;
     }
 }
 
+// made this class in case I want to have a class of <a> that doesn't highlight links on hover. This is not in use currently however. 
 a.highlight {
     &:hover {
         color: white;
-        text-decoration: underline;
         background-color: black;
     }
 }
