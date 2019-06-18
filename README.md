@@ -1,11 +1,13 @@
 This is my small personal website, a work in progress. It is built on the default [brutalist](https://github.com/kwhaler/brutalist-jekyll) theme. 
 
-### How to use
+### How to run
 1. To set up follow [this](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) guide. 
-2. In the root directory of your Jekyll site, run `bundle exec jekyll serve`
+2. In the root directory of your Jekyll site, run `bundle exec jekyll serve`. 
+3. To update the live site just push changes to master branch. 
 
 ### Remarks
 1. If the live website won't update then your browser might have the old page [cached](https://stackoverflow.com/a/47443046). In Chrome go to `Menu > More Tools > Clear Browsing Data`. 
+2. Latex is supported via [Mathjax](http://docs.mathjax.org/en/latest/tex.html). 
 
 ### Structure of project
 The structure is just like any other Jekyll site, I'm writing this as a reminder for myself. 
