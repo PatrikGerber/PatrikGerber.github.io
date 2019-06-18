@@ -7,6 +7,14 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://PatrikGerber.github.io" # the base hostname & protocol for your site
 github_username:  PatrikGerber
 
+# Plugins
+plugins:
+  - jekyll-paginate
+
+# Pagination
+paginate: 3
+paginate_path: "/page-:num/"
+
 # Build settings
 markdown: kramdown
 

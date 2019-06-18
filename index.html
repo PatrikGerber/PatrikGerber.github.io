@@ -3,29 +3,69 @@ layout: default
 ---
 
 <div class="home">
+  
+  <!-- <p style='clear: both;'></p> -->
 
-  <img hspace='20' src="images/profile.jpg" alt="A picture of me" align='left'>
-  <h1>Hello!</h1>
-  <p>
-  This is my personal website that I made for fun. In the future I hope to turn this into my academic webpage, until then it will just function as a resume.  In my free time I enjoy playing the piano, you can find some old videos of me on <a class='highlight' href="https://www.youtube.com/user/GerberPatrik">youtube</a>. 
-  </p>
-  <!-- <p>
-    This website was set up using <a href="https://jekyllrb.com/">Jekyll</a> and it is hosted by <a href="https://pages.github.com/">Github pages</a>. 
-  </p> -->
-  <!-- <h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  {% for post in paginator.posts %}
+  <div class="post">
+    <header class="post-header">
+      <h1 class="post-title">{{ post.title }}</h1>
+      <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
+    </header>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+    <article class="post-content">
+      {{ post.content }}
+    </article>
+  </div> 
+  {% endfor %}
+
+
+  <!-- pagination -->
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+    {% else %}
+      <span>&laquo; Prev</span>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <span class="webjeda">{{ page }}</span>
+      {% elsif page == 1 %}
+        <a href="/">{{ page }}</a>
+      {% else %}
+        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      {% endif %}
     {% endfor %}
-  </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+    {% else %}
+      <span>Next &raquo;</span>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  <!-- This is code for displaying ALL posts on this page  -->
+  <!--  {%for post in site.posts limit:10 %}
+    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <h2>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h2>       
+    <div class="post">
+        <header class="post-header">
+          <h1 class="post-title">{{ post.title }}</h1>
+          <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
+        </header>
+
+        <article class="post-content">
+          {{ post.content }}
+        </article>
+      </div>        
+  {% endfor %} --> 
+
+  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
 </div>

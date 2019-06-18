@@ -16,15 +16,11 @@
     margin-bottom: 0;
     float: left;
     text-decoration: none;
+    color: $text-color;
 
     &:visited {
         color: $text-color;
     };
-    &:hover {
-        color: $text-color;
-        text-decoration: none;
-        background-color: transparent;
-    }
 }
 
 .site-nav {
@@ -38,16 +34,11 @@
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
-        text-decoration: none;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
             margin-left: 20px;
         }
-        &:hover {
-            background-color: black;
-            color: white;
-        };
     }
 
     @include media-query($on-palm) {

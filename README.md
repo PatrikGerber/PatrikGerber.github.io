@@ -6,3 +6,6 @@ This is my small personal website, a work in progress. It is built on the defaul
 
 ### Remarks
 1. If the live website won't update then your browser might have the old page [cached](https://stackoverflow.com/a/47443046). In Chrome go to `Menu > More Tools > Clear Browsing Data`. 
+
+### Structure of project
+The structure is just like any other Jekyll site, I'm writing this as a reminder for myself. 

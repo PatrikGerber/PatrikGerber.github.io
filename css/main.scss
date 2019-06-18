@@ -19,10 +19,10 @@ $text-color:		#111111;
 $background-color:	#F9F9F9;
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    1000px;
 
 $on-palm:          600px;
-$on-laptop:        800px;
+$on-laptop:        1000px;
 
 
 
@@ -43,8 +43,8 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
         "layout",
+        "base",
         "syntax-highlighting",
         url('https://fonts.googleapis.com/css?family=Montserrat&display=swap')
 ;
