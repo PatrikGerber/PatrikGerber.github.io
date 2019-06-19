@@ -21,6 +21,7 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+    min-height: 100vh;
 }
 
 ::selection {
@@ -198,8 +199,6 @@ pre {
     }
 }
 
-
-
 /**
  * Clearfix
  */
@@ -221,8 +220,8 @@ pre {
 
     > svg {
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        width: 28px;
+        height: 28px;
         vertical-align: middle;
 
         path {
