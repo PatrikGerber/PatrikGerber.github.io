@@ -8,7 +8,7 @@ profile:
   align: right
   image: prof_pic.jpg
   address: >
-    <p align='center'>Office 2-446, 182 Memorial Dr</p>
+    <p align='center'>Office 2-449, 182 Memorial Dr</p>
     <p align='center'>Cambridge, MA 02142</p>
 
 news: false
