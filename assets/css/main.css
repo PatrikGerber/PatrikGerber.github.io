@@ -148,9 +148,9 @@ h6, .h6 { font-size: 0.75rem; }
 /* Basscss Color Base */
 body { color: #333; background-color: white; }
 
-a { color: #B509AC; text-decoration: none; }
+a { /*color: $theme-color;*/ /*text-decoration: none;*/ }
 
-a:hover { text-decoration: underline; }
+a:hover { /*text-decoration: underline;*/ }
 
 pre, code { background-color: #eee; border-radius: 3px; }
 
@@ -320,7 +320,8 @@ hr { border: 0; border-bottom-style: solid; border-bottom-width: 1px; border-bot
 
 .px4 { padding-left: 4rem; padding-right: 4rem; }
 
-html { margin-left: calc(100vw - 100%); margin-right: 0; }
+html { margin-left: calc(100vw - 100%); margin-right: 0; /*::selection{ background-color: black; color: white;
+}*/ }
 
 html, body { height: auto; min-height: 100%; -webkit-text-size-adjust: 100%; }
 
@@ -504,12 +505,13 @@ figcaption { font-size: 0.875rem; }
 
 .gist .lines { width: 100%; }
 
-a { color: #666; text-decoration: none; }
-a:hover { color: #B509AC; text-decoration: none; }
+a { text-decoration: none; background: -webkit-linear-gradient(left, #8200FC, #001BFC); background: -o-linear-gradient(right, #8200FC, #001BFC); background: -moz-linear-gradient(right, #8200FC, #001BFC); background: linear-gradient(to right, #8200FC, #001BFC); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+a:hover { background: transparent; background-color: black; -webkit-text-fill-color: white; color: white; text-decoration: none; }
 
-article a, .news a { color: #B509AC; font-weight: 100; }
-article a:hover, .news a:hover { text-decoration: underline; }
-
+/*article a, .news a {*/
+/*color: $theme-color;*/
+/*font-weight: 100;    */
+/*}*/
 .social a { color: #666; }
 .social a:hover { color: #B509AC; }
 
