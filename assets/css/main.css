@@ -340,7 +340,7 @@ body { box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: 
 
 .right { float: right; }
 
-.site-header { border-bottom: 1px solid #e8e8e8; background-color: #fff; opacity: 0.95; position: fixed; left: calc((100vw - 100%)/2); top: 0px; width: 100%; z-index: 50; }
+.site-header { /*border-bottom: 1px solid $grey-color-light;*/ background-color: #fff; opacity: 0.95; position: fixed; left: calc((100vw - 100%)/2); top: 0px; width: 100%; z-index: 50; }
 
 .site-title { font-size: 20px; line-height: 56px; letter-spacing: -1px; margin-bottom: 0; }
 
