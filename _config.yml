@@ -4,6 +4,7 @@
 name: Patrik Gerber
 email: prgerber@mit.edu
 description: > # this means to ignore newlines until "url:"
+repository: PatrikGerber/PatrikGerber.github.io
   
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
