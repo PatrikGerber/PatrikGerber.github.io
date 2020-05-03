@@ -1,6 +1,8 @@
 # -----------------------------------------------------------------------------
 # Site settings
 # -----------------------------------------------------------------------------
+environment: development
+# environment: production
 name: Patrik Gerber
 email: prgerber@mit.edu
 description: > # this means to ignore newlines until "url:"
