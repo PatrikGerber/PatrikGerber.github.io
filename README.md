@@ -1,4 +1,27 @@
-# al-folio
+# Instructions to run
+```bash
+$ bundle exec jekyll serve --port portnumber
+```
+if that hangs you can try a bunch of things
+```bash
+$ gem cleanup
+$ bundle update 
+$ bundle clean --force
+```
+some links: 
+1. https://stackoverflow.com/questions/6317980/you-have-already-activated-x-but-your-gemfile-requires-y
+2. ...
+
+Conjecture: this makes it work:
+DELETE GEMFILE.LOCK
+RUN ON SPECIFIC PORT BECAUSE DEFAULT ONE IS TAKEN i.e. bundle exec jekyll serve --port XXXX
+
+
+
+
+
+# Below is the README of the Al-folio theme this site is forked from
+## al-folio
 
 [![build status](https://travis-ci.org/alshedivat/al-folio.svg?branch=master)](https://travis-ci.org/alshedivat/al-folio)
 [![demo](https://img.shields.io/badge/theme-demo-brightgreen.svg)](https://alshedivat.github.io/al-folio/)

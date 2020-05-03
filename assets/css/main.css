@@ -30,7 +30,7 @@
 
   Next-level CSS toolkit - basscss.com
 
-  Made with love by Jxnblk - ©2014 Brent Jackson
+  Made with love by Jxnblk - ┬⌐2014 Brent Jackson
   MIT License http://opensource.org/licenses/MIT
 
 */
@@ -65,7 +65,7 @@ img { max-width: 100%; }
 svg { max-height: 100%; }
 
 /* Basscss Base Typography */
-body { font-family: "Montserrat", sans-serif; line-height: 1.5; font-size: 100%; }
+body { font-family: "Montserrat", sans-serif; line-height: 1.1; font-size: 100%; }
 
 h1, h2, h3, h4, h5, h6 { font-family: "Montserrat", sans-serif; font-weight: 900; line-height: 1.25; margin-top: 1em; margin-bottom: .5em; }
 
@@ -320,12 +320,17 @@ hr { border: 0; border-bottom-style: solid; border-bottom-width: 1px; border-bot
 
 .px4 { padding-left: 4rem; padding-right: 4rem; }
 
-html { margin-left: calc(100vw - 100%); margin-right: 0; /*::selection{ background-color: black; color: white;
-}*/ }
+html { margin-left: calc(100vw - 100%); margin-right: 0; }
+html ::selection { background-color: lightslategray; color: white; }
 
+/*html, html[data-theme="light"], { --light-text-color: hsl(0, 0%, 35%); --main-background-color: hsl(0, 5%, 95%); --main-text-color: hsl(0, 0%, 0%);
+}
+
+html[data-theme="dark"] { --light-text-color: hsl(0, 0%, 60%); --main-background-color: hsl(0, 0%, 10%); --main-text-color: hsl(0, 10%, 80%);
+}*/
 html, body { height: auto; min-height: 100%; -webkit-text-size-adjust: 100%; }
 
-img { max-width: none; }
+img { max-width: 70%; }
 
 em img { max-width: 100%; margin-left: 0; }
 
@@ -348,7 +353,7 @@ body { box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: 
 .site-nav { float: right; line-height: 56px; }
 .site-nav .nav-trigger { display: none; }
 .site-nav .menu-icon { display: none; }
-.site-nav .page-link { line-height: 1.5; }
+.site-nav .page-link { line-height: 1.1; }
 .site-nav .page-link:not(:first-child) { margin-left: 10px; }
 @media screen and (max-width: 600px) { .site-nav { position: absolute; top: 9px; right: 25px; background-color: white; border: 1px solid #e8e8e8; border-radius: 5px; text-align: right; }
   .site-nav label[for="nav-trigger"] { display: block; float: right; width: 36px; height: 36px; z-index: 2; cursor: pointer; }
@@ -368,9 +373,9 @@ body { box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: 
 .site-wrap { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1 0 auto; flex: 1 0 auto; }
 
 footer { /*background-color: $grey-color-dark;*/ background-color: white; /*border-top: $footer-border-top;*/ color: #666; font-size: 0.75rem; font-weight: 300; padding: 0.5rem; position: fixed; left: 0px; bottom: 0px; width: 100%; /*a { color: #fff; }*/ }
-footer a:hover { color: #B509AC; }
+footer a.icon:hover { text-decoration: none; background: -webkit-linear-gradient(left, #8200FC, #001BFC); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-.page-content { padding: 100px 0; /* VERTICAL PADDING FOR TITLE ON EVERY PAGE */ }
+.page-content { padding-top: 100px; /* VERTICAL PADDING FOR TITLE ON EVERY PAGE */ }
 
 .page-heading { font-size: 20px; }
 
@@ -415,7 +420,7 @@ footer a:hover { color: #B509AC; }
 .news table tr { text-align: left; }
 .news table td { padding: 6px 0; vertical-align: top; border: none; }
 
-.social { border-top: 1px solid #e8e8e8; margin-top: 50px; padding-top: 20px; }
+.social { /*border-top: 1px solid $grey-color-light;*/ /*margin-top: 50px;*/ /*padding-top: 20px;*/ }
 
 .pagination { font-size: 1rem; font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif; font-weight: 300; text-align: center; }
 
@@ -505,7 +510,9 @@ figcaption { font-size: 0.875rem; }
 
 .gist .lines { width: 100%; }
 
-a { text-decoration: none; background: -webkit-linear-gradient(left, #8200FC, #001BFC); background: -o-linear-gradient(right, #8200FC, #001BFC); background: -moz-linear-gradient(right, #8200FC, #001BFC); background: linear-gradient(to right, #8200FC, #001BFC); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+a { text-decoration: none; background: -webkit-linear-gradient(left, #8200FC, #001BFC); /*background: -o-linear-gradient(right, #8200FC, #001BFC);
+background: -moz-linear-gradient(right, #8200FC, #001BFC);
+background: linear-gradient(to right, #8200FC , #001BFC); */ -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 a:hover { background: transparent; background-color: black; -webkit-text-fill-color: white; color: white; text-decoration: none; }
 
 /*article a, .news a {*/
@@ -562,7 +569,7 @@ body { color: #666; font-weight: 100; }
 
 abbr { border-bottom: 1px black dotted; cursor: help; }
 
-p { color: #333; line-height: 1.5; }
+p { color: #333; line-height: 1.1; }
 
 small, .small { font-size: 0.707rem; }
 
