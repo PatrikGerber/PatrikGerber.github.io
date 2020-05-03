@@ -2,14 +2,14 @@
 layout: about
 permalink: /
 title: Patrik Robert Gerber 
-description: <a href="https://math.mit.edu/">MIT, Department of Mathematics</a>
+description: MIT, Department of Mathematics
 
 profile:
   align: right
   image: prof_pic.jpg
   address: >
-    <p align='center'>Office 2-449, 182 Memorial Dr</p>
-    <p align='center'>Cambridge, MA 02142</p>
+    <!-- <p align='center'>Office 2-449, 182 Memorial Dr</p>
+    <p align='center'>Cambridge, MA 02142</p> -->
 
 news: false
 social: false

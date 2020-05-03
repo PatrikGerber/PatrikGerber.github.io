@@ -10,9 +10,9 @@ a {
     }
 
     background: -webkit-linear-gradient(left, #8200FC , #001BFC);
-    background: -o-linear-gradient(right, #8200FC, #001BFC);
+    /*background: -o-linear-gradient(right, #8200FC, #001BFC);
     background: -moz-linear-gradient(right, #8200FC, #001BFC);
-    background: linear-gradient(to right, #8200FC , #001BFC); 
+    background: linear-gradient(to right, #8200FC , #001BFC); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

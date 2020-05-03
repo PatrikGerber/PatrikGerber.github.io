@@ -2,11 +2,23 @@
 html{
     margin-left: calc(100vw - 100%);
     margin-right: 0;
-    /*::selection{
-      background-color: black;
+    ::selection{
+      background-color: lightslategray;
       color: white;
-    }*/
+    }
 }
+
+/*html, html[data-theme="light"], {
+  --light-text-color: hsl(0, 0%, 35%);
+  --main-background-color: hsl(0, 5%, 95%);
+  --main-text-color: hsl(0, 0%, 0%);
+}
+
+html[data-theme="dark"] {
+  --light-text-color: hsl(0, 0%, 60%);
+  --main-background-color: hsl(0, 0%, 10%);
+  --main-text-color: hsl(0, 10%, 80%);
+}*/
 
 html, body {
   height: auto;
@@ -15,7 +27,7 @@ html, body {
 }
 
 img {
-  max-width: none;
+  max-width: 70%;
 }
 
 em img {

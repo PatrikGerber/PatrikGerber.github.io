@@ -32,5 +32,10 @@ footer {
   width: 100%;
 
   /*a { color: #fff; }*/
-  a:hover { color: $theme-color; }
+  a.icon:hover { 
+    text-decoration: none;
+    background: -webkit-linear-gradient(left, #8200FC, #001BFC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
