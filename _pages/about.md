@@ -15,4 +15,4 @@ news: false
 social: false
 ---
 
-I am a first year Applied Mathematics PhD student at MIT, supervised by <a href="http://www-math.mit.edu/~rigollet/">Prof. Philippe Rigollet</a>. Prior to MIT I obtained a Master's in Mathematics and Statistics from the University of Oxford. 
+I am a second year Applied Mathematics PhD student at MIT, supervised by <a href="http://www-math.mit.edu/~rigollet/">Prof. Philippe Rigollet</a>. Prior to MIT I obtained a Master's in Mathematics and Statistics from the University of Oxford. I am interested in Statistics, Machine Learning and Optimization among other things. In my freetime I enjoy playing <a href="https://www.youtube.com/user/GerberPatrik/videos">piano</a>. 
