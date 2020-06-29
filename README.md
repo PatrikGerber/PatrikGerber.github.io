@@ -1,4 +1,4 @@
-# Instructions to run
+# Instructions for development
 ```bash
 $ bundle exec jekyll serve --port portnumber
 ```
@@ -16,6 +16,14 @@ Conjecture: this makes it work:
 DELETE GEMFILE.LOCK
 RUN ON SPECIFIC PORT BECAUSE DEFAULT ONE IS TAKEN i.e. bundle exec jekyll serve --port XXXX
 
+
+
+
+# Deployment
+DELTE GEMFILE.LOCK
+1. change enviroment variable to production in config file
+2. bundle exec jekyll build
+3. Upload contents of \_site folder to github
 
 
 
