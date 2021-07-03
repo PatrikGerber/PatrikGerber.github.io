@@ -1,66 +1,28 @@
----
----
+@article{altschuler2021averaging,
+  title={Averaging on the Bures-Wasserstein manifold: dimension-free convergence of gradient descent},
+  author={Altschuler, Jason M and Chewi, Sinho and Gerber, Patrik and Stromme, Austin J},
+  journal={arXiv preprint arXiv:2106.08502},
+  year={(2021)},
+  howpublished="\url{https://arxiv.org/pdf/2106.08502.pdf}",
+  abstract={We study first-order optimization algorithms for computing the barycenter of Gaussian distributions with respect to the optimal transport metric. Although the objective is geodesically non-convex, Riemannian GD empirically converges rapidly, in fact faster than off-the-shelf methods such as Euclidean GD and SDP solvers. This stands in stark contrast to the best-known theoretical results for Riemannian GD, which depend exponentially on the dimension. In this work, we prove new geodesic convexity results which provide stronger control of the iterates, yielding a dimension-free convergence rate. Our techniques also enable the analysis of two related notions of averaging, the entropically-regularized barycenter and the geometric median, providing the first convergence guarantees for Riemannian GD for these problems.},
+  arxiv="2106.08502"
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1956investigations,
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,}
 }
 
-@article{einstein1950meaning,
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
+@article{chewi2021query,
+  title={The query complexity of sampling from strongly log-concave distributions in one dimension},
+  author={Chewi, Sinho and Gerber, Patrik and Lu, Chen and Gouic, Thibaut Le and Rigollet, Philippe},
+  journal={arXiv preprint arXiv:2105.14163},
+  year={(2021)},
+  abstract={We establish the first tight lower bound of \Omega(loglog\kappa) on the query complexity of sampling from the class of strongly log-concave and log-smooth distributions with condition number \kappa &nbsp; in one dimension. Whereas existing guarantees for MCMC-based algorithms scale polynomially in \kappa, we introduce a novel algorithm based on rejection sampling that closes this doubly exponential gap.},
+  arxiv="2105.14163"
 }
 
-@article{PhysRev.47.777,
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@article{chewi2021rejection,
+  title={Rejection sampling from shape-constrained distributions in sublinear time},
+  author={Chewi, Sinho and Gerber, Patrik and Lu, Chen and Gouic, Thibaut Le and Rigollet, Philippe},
+  journal={arXiv preprint arXiv:2105.14166},
+  abstract={We consider the task of generating exact samples from a target distribution, known up to normalization, over a finite alphabet. The classical algorithm for this task is rejection sampling, and although it has been used in practice for decades, there is surprisingly little study of its fundamental limitations. In this work, we study the query complexity of rejection sampling in a minimax framework for various classes of discrete distributions. Our results provide new algorithms for sampling whose complexity scales sublinearly with the alphabet size. When applied to adversarial bandits, we show that a slight modification of the Exp3 algorithm reduces the per-iteration complexity from O(K) to O(log^2 K), where K is the number of arms.},
+  year={(2021)},
+  arxiv="2105.14166"
 }

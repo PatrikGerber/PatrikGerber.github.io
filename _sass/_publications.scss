@@ -10,7 +10,7 @@
     }
 }
 .year {
-    border-top: 1px solid $light-gray;
+    // border-top: 1px solid $light-gray;
     color: $light-gray;
     margin: 0 -3em -2.5ex -2em;
     padding-top: 1ex;
@@ -19,15 +19,15 @@
 .bibliography {
     margin-bottom: 50px;
     margin-top: 20px;
-    list-style-type: circle;
 
     li {
-        margin: 10px 0;
-        position: relative;
+		margin: 0;
 
-        span { display: block; }
+        span { display: block; font-size: 1rem;}
         .title { font-weight: bolder; }
+		.periodical{ font-size: 0.8rem; }
         .author {
+			font-size: 0.8rem;
             a {
                 border-bottom: 1px dashed $theme-color;
                 &:hover {
@@ -35,14 +35,15 @@
                     text-decoration: none;
                 }
             }
-            > em {
-                border-bottom: 1px solid;
-                font-style: normal;
-            }
+            // > em {
+            //     border-bottom: 1px solid;
+            //     font-style: normal;
+            // }
         }
+
         a.abstract, a.bibtex { cursor: pointer; }
         .hidden {
-            font-size: $small-font-size;
+            p{font-size: 0.8rem;}
             max-height: 0px;
             overflow: hidden;
             text-align: justify;

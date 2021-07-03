@@ -2,11 +2,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <script type="text/javascript" src="assets/js/dark_theme_local_storage.js"></script>
-
   <title>{{ site.name }}{% if page.title and page.url != "/" %} | {{ page.title }}{% endif %}</title>
   <meta name="description" content="{{ site.description }}">
+
+  {% if site.google_analytics and jekyll.environment == 'production' %}
+    {% include analytics.html %}
+  {% endif %}
 
   {% if site.serve_og_meta %}
     <meta property="og:site_name" content="{{ site.description }}" />
