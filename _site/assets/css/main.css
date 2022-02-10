@@ -5,32 +5,21 @@
 /******************************************************************************/
 /* portfolio tinkering */
 /* add on-palm to be consistent with other jekyll theme media queries */
-@media screen and (min-width: 32em) { html { font-size: 16px; }
-  h1, .h1 { font-size: 2.998rem; }
-  .site-header { text-align: left; }
-  .site-nav { margin-top: 0; }
-  .site-header a { font-size: 1rem; }
-  .site-header .site-title { font-size: 1.25rem; float: left; }
-  .site-header .site-nav { float: right; }
-  blockquote { margin-left: 2rem; padding: 2rem; }
-  .social-icons-left { text-align: left; }
-  .social-icons-right { text-align: right; }
-  .img_row { height: 91.6666666667px; }
-  .col { padding: 1.6666666667px; } }
-@media screen and (min-width: 48em) { html { font-size: 18px; }
-  .img_row { height: 183.3333333333px; }
-  .col { padding: 3.3333333333px; } }
-@media screen and (min-width: 64em) { html { font-size: 20px; }
-  .img_row { height: 275px; }
-  .col { padding: 5px; } }
+@media screen and (min-width: 32em) { html { font-size: 16px; } h1, .h1 { font-size: 2.998rem; } .site-header { text-align: left; } .site-nav { margin-top: 0; } .site-header a { font-size: 1rem; } .site-header .site-title { font-size: 1.25rem; float: left; } .site-header .site-nav { float: right; } blockquote { margin-left: 2rem; padding: 2rem; } .social-icons-left { text-align: left; } .social-icons-right { text-align: right; } .img_row { height: 91.6666666667px; } .col { padding: 1.6666666667px; } }
+
+@media screen and (min-width: 48em) { html { font-size: 18px; } .img_row { height: 183.3333333333px; } .col { padding: 3.3333333333px; } }
+
+@media screen and (min-width: 64em) { html { font-size: 20px; } .img_row { height: 275px; } .col { padding: 5px; } }
+
 @media screen and (min-width: 78em) { em img { max-width: 56rem; margin-left: -7em; } }
+
 /*!
 
   BASSCSS
 
   Next-level CSS toolkit - basscss.com
 
-  Made with love by Jxnblk - ┬⌐2014 Brent Jackson
+  Made with love by Jxnblk - ©2014 Brent Jackson
   MIT License http://opensource.org/licenses/MIT
 
 */
@@ -210,12 +199,10 @@ hr { border: 0; border-bottom-style: solid; border-bottom-width: 1px; border-bot
 
 .h0 { font-size: 3rem; }
 
-@media (min-width: 52em) { .h00-responsive { font-size: 8vw; }
-  .h0-responsive { font-size: 6vw; }
-  .h1-responsive { font-size: 4vw; } }
-@media (min-width: 96em) { .h00-responsive { font-size: 7.68rem; }
-  .h0-responsive { font-size: 5.76rem; }
-  .h1-responsive { font-size: 3.84rem; } }
+@media (min-width: 52em) { .h00-responsive { font-size: 8vw; } .h0-responsive { font-size: 6vw; } .h1-responsive { font-size: 4vw; } }
+
+@media (min-width: 96em) { .h00-responsive { font-size: 7.68rem; } .h0-responsive { font-size: 5.76rem; } .h1-responsive { font-size: 3.84rem; } }
+
 /* Basscss Utility Typography */
 .bold { font-weight: bold; }
 
@@ -321,13 +308,10 @@ hr { border: 0; border-bottom-style: solid; border-bottom-width: 1px; border-bot
 .px4 { padding-left: 4rem; padding-right: 4rem; }
 
 html { margin-left: calc(100vw - 100%); margin-right: 0; }
+
 html ::selection { background-color: lightslategray; color: white; }
 
-/*html, html[data-theme="light"], { --light-text-color: hsl(0, 0%, 35%); --main-background-color: hsl(0, 5%, 95%); --main-text-color: hsl(0, 0%, 0%);
-}
-
-html[data-theme="dark"] { --light-text-color: hsl(0, 0%, 60%); --main-background-color: hsl(0, 0%, 10%); --main-text-color: hsl(0, 10%, 80%);
-}*/
+/*html, html[data-theme="light"], { --light-text-color: hsl(0, 0%, 35%); --main-background-color: hsl(0, 5%, 95%); --main-text-color: hsl(0, 0%, 0%); } html[data-theme="dark"] { --light-text-color: hsl(0, 0%, 60%); --main-background-color: hsl(0, 0%, 10%); --main-text-color: hsl(0, 10%, 80%); }*/
 html, body { height: auto; min-height: 100%; -webkit-text-size-adjust: 100%; }
 
 img { max-width: 70%; }
@@ -353,21 +337,21 @@ li { padding: 2px 0 2px 30px; list-style: none; background-image: url("/assets/i
 .site-title { font-size: 20px; line-height: 56px; letter-spacing: -1px; margin-bottom: 0; }
 
 .site-nav { float: right; line-height: 56px; }
+
 .site-nav .nav-trigger { display: none; }
+
 .site-nav .menu-icon { display: none; }
+
 .site-nav .page-link { line-height: 1.1; }
+
 .site-nav .page-link:not(:first-child) { margin-left: 10px; }
-@media screen and (max-width: 600px) { .site-nav { position: absolute; top: 9px; right: 25px; background-color: white; border: 1px solid #e8e8e8; border-radius: 5px; text-align: right; }
-  .site-nav label[for="nav-trigger"] { display: block; float: right; width: 36px; height: 36px; z-index: 2; cursor: pointer; }
-  .site-nav .menu-icon { display: block; float: right; width: 36px; height: 26px; line-height: 0; padding-top: 10px; text-align: center; }
-  .site-nav .menu-icon > svg path { fill: #424242; }
-  .site-nav input ~ .trigger { clear: both; display: none; }
-  .site-nav input:checked ~ .trigger { display: block; padding-bottom: 5px; }
-  .site-nav .page-link { display: block; padding: 5px 10px; margin-left: 10px; }
-  .site-nav .page-link:not(:last-child) { margin-right: 0; } }
+
+@media screen and (max-width: 600px) { .site-nav { position: absolute; top: 9px; right: 25px; background-color: white; border: 1px solid #e8e8e8; border-radius: 5px; text-align: right; } .site-nav label[for="nav-trigger"] { display: block; float: right; width: 36px; height: 36px; z-index: 2; cursor: pointer; } .site-nav .menu-icon { display: block; float: right; width: 36px; height: 26px; line-height: 0; padding-top: 10px; text-align: center; } .site-nav .menu-icon > svg path { fill: #424242; } .site-nav input ~ .trigger { clear: both; display: none; } .site-nav input:checked ~ .trigger { display: block; padding-bottom: 5px; } .site-nav .page-link { display: block; padding: 5px 10px; margin-left: 10px; } .site-nav .page-link:not(:last-child) { margin-right: 0; } }
 
 .header-bar { border-bottom: 1px solid #ccc; font-size: 20px; display: block; opacity: 0.75; width: 100%; text-align: center; padding-top: 25px; padding-bottom: 4rem; line-height: 3em; z-index: 25; }
+
 .header-bar h1 { color: #B509AC; font-size: 75px; }
+
 .header-bar h2 { font-size: 25px; }
 
 .site { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; min-height: 100vh; }
@@ -375,6 +359,7 @@ li { padding: 2px 0 2px 30px; list-style: none; background-image: url("/assets/i
 .site-wrap { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1 0 auto; flex: 1 0 auto; }
 
 footer { /*background-color: $grey-color-dark;*/ background-color: white; /*border-top: $footer-border-top;*/ color: #666; font-size: 0.75rem; font-weight: 300; padding: 0.5rem; position: fixed; left: 0px; bottom: 0px; width: 100%; /*a { color: #fff; }*/ }
+
 footer a.icon:hover { text-decoration: none; background: -webkit-linear-gradient(left, #8200FC, #001BFC); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
 .page-content { padding-top: 100px; /* VERTICAL PADDING FOR TITLE ON EVERY PAGE */ padding-bottom: 100px; text-align: justify; }
@@ -388,12 +373,15 @@ footer a.icon:hover { text-decoration: none; background: -webkit-linear-gradient
 .post-header { margin-bottom: 40px; }
 
 .post-list { margin: 0; padding: 0; list-style: none; }
+
 .post-list > li { border-bottom: 1px solid #ccc; padding-bottom: 2rem; padding-top: 2rem; }
 
 .post-title { font-size: 42px; letter-spacing: -1px; line-height: 1; margin-bottom: 10px; margin-top: 0; }
 
 .post-content h2 { font-size: 42px; }
+
 .post-content h3 { font-size: 30px; }
+
 .post-content h4 { font-size: 20px; }
 
 .post-meta { color: #828282; font-size: 0.875rem; margin-bottom: 0px; }
@@ -401,26 +389,41 @@ footer a.icon:hover { text-decoration: none; background: -webkit-linear-gradient
 .post-link { display: block; font-size: 42px; }
 
 .project { box-sizing: border-box; float: left; height: 250px; padding: 10px; vertical-align: middle; width: 33.33%; }
+
 .project .thumbnail { overflow: hidden; height: 200px; width: 100%; }
+
 .project .thumbnail img { height: auto; position: relative; left: -25%; top: -5%; width: 500px; }
+
 .project .thumbnail a { float: left; height: 230px; position: relative; width: 100%; }
+
 .project .thumbnail a span { display: none; position: absolute; top: 0; left: 0; bottom: 0; right: 0; background: rgba(0, 0, 0, 0.4); color: #e8e8e8; padding: 40px; text-align: center; }
+
 .project .thumbnail a span h1 { font-size: 1.5rem; margin: 0; }
+
 .project .thumbnail a span p { color: #e8e8e8; }
+
 .project .thumbnail a:hover span { display: block; }
 
 .profile { margin-left: 5rem; }
+
 .profile img { box-shadow: 0 0 5px #828282; width: 100%; }
 
 .address { font-family: monospace; }
+
 .address p { margin: 0; }
 
 .news { border-top: 1px solid #e8e8e8; margin-top: 30px; padding-top: 20px; }
+
 .news h2 { font-weight: bold; margin-top: 0; margin-bottom: 10px; }
+
 .news table { border-collapse: collapse; width: 100%; }
+
 .news table .date { width: 19%; }
+
 .news table .announcement { width: 81%; }
+
 .news table tr { text-align: left; }
+
 .news table td { padding: 6px 0; vertical-align: top; border: none; }
 
 .social { /*border-top: 1px solid $grey-color-light;*/ /*margin-top: 50px;*/ /*padding-top: 20px;*/ }
@@ -448,21 +451,37 @@ footer a.icon:hover { text-decoration: none; background: -webkit-linear-gradient
 .year { color: #ccc; margin: 0 -3em -2.5ex -2em; padding-top: 1ex; text-align: right; }
 
 .bibliography { margin-bottom: 50px; margin-top: 20px; }
+
 .bibliography li { margin: 0; }
+
 .bibliography li span { display: block; font-size: 1rem; }
+
 .bibliography li .title { font-weight: bolder; }
+
 .bibliography li .periodical { font-size: 0.8rem; }
+
 .bibliography li .author { font-size: 0.8rem; }
+
 .bibliography li .author a { border-bottom: 1px dashed #B509AC; }
+
 .bibliography li .author a:hover { border-bottom-style: solid; text-decoration: none; }
+
 .bibliography li a.abstract, .bibliography li a.bibtex { cursor: pointer; }
+
 .bibliography li .hidden { max-height: 0px; overflow: hidden; text-align: justify; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
+
 .bibliography li .hidden p { font-size: 0.8rem; }
+
 .bibliography li .hidden p { line-height: 1.4em; margin: 10px; }
+
 .bibliography li .hidden pre { font-size: 1em; line-height: 1.4em; padding: 10px; }
+
 .bibliography li .hidden.open { max-height: 100em; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
+
 .bibliography li span.abstract.hidden { border: dashed 1px white; }
+
 .bibliography li span.abstract.hidden.open { border-color: #828282; }
+
 .bibliography abbr { position: absolute; left: -7em; }
 
 .star { color: #B509AC; font-style: normal; }
@@ -515,9 +534,8 @@ figcaption { font-size: 0.875rem; }
 
 .gist .lines { width: 100%; }
 
-a { text-decoration: none; background: -webkit-linear-gradient(left, #8200FC, #001BFC); /*background: -o-linear-gradient(right, #8200FC, #001BFC);
-background: -moz-linear-gradient(right, #8200FC, #001BFC);
-background: linear-gradient(to right, #8200FC , #001BFC); */ -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+a { text-decoration: none; background: -webkit-linear-gradient(left, #8200FC, #001BFC); /*background: -o-linear-gradient(right, #8200FC, #001BFC); background: -moz-linear-gradient(right, #8200FC, #001BFC); background: linear-gradient(to right, #8200FC , #001BFC); */ -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
 a:hover { background: transparent; background-color: black; -webkit-text-fill-color: white; color: white; text-decoration: none; }
 
 /*article a, .news a {*/
@@ -525,29 +543,10 @@ a:hover { background: transparent; background-color: black; -webkit-text-fill-co
 /*font-weight: 100;    */
 /*}*/
 .social a { color: #666; }
+
 .social a:hover { color: #B509AC; }
 
-/* a { color: $link-color; background-image: linear-gradient(to top, rgba(0,0,0,0) 13%, rgba($link-color,.8) 13%, rgba($link-color,.8) 18%, rgba(0,0,0,0) 17% ); text-shadow: white 1px 0px 0px, white -1px 0px 0px;
-}
-a:hover,
-a:focus,
-a:active { border: 0; color: $link-hover-color; text-decoration: none; background-image: linear-gradient(to top, rgba(0,0,0,0) 13%, rgba($link-hover-color,.8) 13%, rgba($link-hover-color,.8) 17%, rgba(0,0,0,0) 17% ); text-shadow: white 1px 0px 0px, white -1px 0px 0px;
-}
-// Correct issues with buttons
-button,
-.button { text-shadow: none; background-image: none;
-}
-.button:hover,
-.button:focus,
-.button:active { color: white; text-shadow: none; background-image: none;
-}
-.anchorjs-link { text-shadow: none; background-image: none;
-}
-.anchorjs-link:hover,
-.anchorjs-link:focus,
-.anchorjs-link:active{ border: 0; color: $link-hover-color; text-shadow: none; background-image: none;
-}
-*/
+/* a { color: $link-color; background-image: linear-gradient(to top, rgba(0,0,0,0) 13%, rgba($link-color,.8) 13%, rgba($link-color,.8) 18%, rgba(0,0,0,0) 17% ); text-shadow: white 1px 0px 0px, white -1px 0px 0px; } a:hover, a:focus, a:active { border: 0; color: $link-hover-color; text-decoration: none; background-image: linear-gradient(to top, rgba(0,0,0,0) 13%, rgba($link-hover-color,.8) 13%, rgba($link-hover-color,.8) 17%, rgba(0,0,0,0) 17% ); text-shadow: white 1px 0px 0px, white -1px 0px 0px; } // Correct issues with buttons button, .button { text-shadow: none; background-image: none; } .button:hover, .button:focus, .button:active { color: white; text-shadow: none; background-image: none; } .anchorjs-link { text-shadow: none; background-image: none; } .anchorjs-link:hover, .anchorjs-link:focus, .anchorjs-link:active{ border: 0; color: $link-hover-color; text-shadow: none; background-image: none; } */
 .measure { margin: 0 auto; max-width: 42rem; }
 
 .social-icons-left, .social-icons-right { text-align: center; float: none; }
@@ -560,12 +559,15 @@ button,
 
 .social-icons iframe[title=Flattr] { position: relative; top: 0.1em; }
 
-/* Table styles copied from Bootstrap Copyright (c) 2013 Twitter, Inc
-*/
+/* Table styles copied from Bootstrap Copyright (c) 2013 Twitter, Inc */
 table { width: 100%; max-width: 100%; margin-bottom: 1.5; }
+
 table > thead > tr > th, table > thead > tr > td, table > tbody > tr > th, table > tbody > tr > td, table > tfoot > tr > th, table > tfoot > tr > td { padding: 12px; line-height: 1.2; vertical-align: top; border-top: 1px solid #333; }
+
 table > thead > tr > th { vertical-align: bottom; border-bottom: 2px solid #333; }
+
 table > caption + thead > tr:first-child > th, table > caption + thead > tr:first-child > td, table > colgroup + thead > tr:first-child > th, table > colgroup + thead > tr:first-child > td, table > thead:first-child > tr:first-child > th, table > thead:first-child > tr:first-child > td { border-top: 0; }
+
 table > tbody + tbody { border-top: 2px solid #333; }
 
 html { font-size: 16px; }
@@ -583,3 +585,5 @@ sup { position: relative; vertical-align: middle; top: -0.9ex; }
 h1, h2, h3, h4, h5, h6 { font-weight: 100; }
 
 div.equation { margin: 0.5rem 0; }
+
+/*# sourceMappingURL=main.css.map */

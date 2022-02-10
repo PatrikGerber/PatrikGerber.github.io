@@ -5,8 +5,12 @@ title: Teaching
 <!-- description: Collection of teaching materials.  -->
 ---
 #### Teaching Assistant
-- <a href="https://math.mit.edu/~nsun/f19-18675.html">18.675</a> --- Theory of Probability <small>(2020 Fall)</small>
-- <a href="http://student.mit.edu/catalog/m15a.html#15.070">15.070J/6.265J</a> --- Discrete Probability and Stochastic Processes <small>(2021 Spring)</small>
+- 18.675/9.521/IDS.160 --- Mathematical Statistics - A non-asymptotic approach <small>(2022 Spring)</small>
+- 15.070J/6.265J --- Discrete Probability and Stochastic Processes <small>(2021 Spring)</small>
+- 18.675 --- Theory of Probability <small>(2020 Fall)</small>
+
+
+
 
 
 #### Academic mentor at √mathroots <small>(2020)</small>

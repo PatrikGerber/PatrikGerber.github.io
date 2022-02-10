@@ -5,10 +5,10 @@ $ bundle exec jekyll serve --port portnumber
 if that hangs you can try a bunch of things
 ```bash
 $ gem cleanup
-$ bundle update 
+$ bundle update
 $ bundle clean --force
 ```
-some links: 
+some links:
 1. https://stackoverflow.com/questions/6317980/you-have-already-activated-x-but-your-gemfile-requires-y
 2. ...
 
@@ -20,7 +20,7 @@ RUN ON SPECIFIC PORT BECAUSE DEFAULT ONE IS TAKEN i.e. bundle exec jekyll serve 
 
 
 # Deployment
-DELTE GEMFILE.LOCK
+DELETE GEMFILE.LOCK
 1. change enviroment variable to production in config file
 2. bundle exec jekyll build
 3. Upload contents of \_site folder to github
