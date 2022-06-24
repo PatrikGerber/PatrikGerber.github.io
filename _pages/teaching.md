@@ -13,8 +13,9 @@ title: Teaching
 
 
 
-#### Academic mentor at √mathroots <small>(2020)</small>
+#### Academic mentor at √mathroots <small>(2020, 2022)</small>
 <a href="http://mathroots.mit.edu">√mathroots</a> is a mathematical talent accelerator summer program for high-potential high school students from underrepresented backgrounds or underserved communities.
-1. Second review <small>[<a href="{{ site.url }}/assets/pdf/MathRoots_review2.pdf">pdf</a>]</small>
-2. First review <small>[<a href="{{ site.url }}/assets/pdf/MathRoots_review1.pdf">pdf</a>]</small>
-3. Diagnostic test 2.3 and 2.4 <small>[<a href="{{ site.url }}/assets/pdf/Mathroots_diagnostic.pdf">pdf</a>]</small>
+
+[comment]: <> (1. Second review <small>[<a href="{{ site.url }}/assets/pdf/MathRoots_review2.pdf">pdf</a>]</small>)
+[comment]: <> (2. First review <small>[<a href="{{ site.url }}/assets/pdf/MathRoots_review1.pdf">pdf</a>]</small>)
+[comment]: <> (3. Diagnostic test 2.3 and 2.4 <small>[<a href="{{ site.url }}/assets/pdf/Mathroots_diagnostic.pdf">pdf</a>]</small>)
