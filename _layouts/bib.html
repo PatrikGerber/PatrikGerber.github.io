@@ -62,7 +62,7 @@
 
   <span class="links">
   {% if entry.abstract %}
-    [<a class="abstract">abstract</a>]
+    [<a href="#{{entry.abstract}}" class="abstract">abstract</a>]
   {% endif %}
   {% if entry.arxiv %}
     [<a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>]
@@ -89,7 +89,7 @@
 
   <!-- Hidden abstract block -->
   {% if entry.abstract %}
-  <span class="abstract hidden">
+  <span id="{{entry.abstract}}" class="abstract hidden">
     <p>{{ entry.abstract }}</p>
   </span>
   {% endif %}

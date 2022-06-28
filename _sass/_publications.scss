@@ -63,8 +63,9 @@
                 padding: 10px;
             }
         }
-        .hidden.open {
+        .hidden:target {
             max-height: 100em;
+						overflow: auto;
             -webkit-transition: 0.15s ease;
             -moz-transition: 0.15s ease;
             -ms-transition: 0.15s ease;
