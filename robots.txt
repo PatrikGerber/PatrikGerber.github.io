@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://patrikgerber.github.io/sitemap.xml

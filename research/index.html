@@ -8,14 +8,18 @@
   <title> | Research</title>
   <meta name="description" content="">
 
-  
 
-  
+
+
 
   <link rel="shortcut icon" href="https://patrikgerber.github.io/assets/img/favicon.ico">
 
   <link rel="stylesheet" href="https://patrikgerber.github.io/assets/css/main.css">
   <link rel="canonical" href="https://patrikgerber.github.io/research/">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
 </head>
 
 
@@ -25,13 +29,13 @@
 
   <div class="wrapper">
 
-    
+
     <span class="site-title">
-        
+
         <!-- <strong></strong>  -->
-         
+
     </span>
-    
+
 
     <nav class="site-nav">
       <input type="checkbox" id="nav-trigger" class="nav-trigger">
@@ -54,33 +58,33 @@
 
         <!-- Pages -->
         <!-- Delete page.title != "publications" (etc) to get back other pages in the header -->
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
+
+
+
+
+
+
+
+
+
+
             <a class="page-link" href="https://patrikgerber.github.io/research/">Research</a>
-          
-        
-          
-        
-          
+
+
+
+
+
             <a class="page-link" href="https://patrikgerber.github.io/teaching/">Teaching</a>
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+
+
+
+
+
+
+
+
+
+
 
         <!-- CV link -->
         <!-- <a class="page-link" href="https://patrikgerber.github.io/assets/pdf/CV.pdf">vitae</a> -->
@@ -110,346 +114,155 @@
 
 <div>
   <ol class="bibliography">
+
+    <li>
+    <div id="gerberpoly">
+
+        <span class="title">Likelihood-free hypothesis testing</span>
+        <span class="author"><em>Patrik Róbert Gerber</em> and Yury Polyanskiy</span>
+
+        <span class="periodical"><em>arXiv:2211.01126</em> (2022)
+        </span>
+
+
+      <span class="links">
+        [<a href="#gerberpoly_abstract" class="abstract">abstract</a>]
+        [<a href="https://arxiv.org/abs/2211.01126" target="_blank" rel="noopener noreferrer">arXiv</a>]
+      </span>
+
+      <!-- Hidden abstract block -->
+
+      <span id="gerberpoly_abstract" class="abstract hidden">
+        <p>Consider the problem of testing Z ~ ℙᵐ vs Z ~ ℚᵐ from m samples. Generally, to achieve a small error rate it is necessary and sufficient to have m≍1/ϵ², where ϵ measures the separation between ℙ and ℚ in total variation (𝖳𝖵). Achieving this, however, requires complete knowledge of the distributions ℙ and ℚ and can be done, for example, using the Neyman-Pearson test. In this paper we consider a variation of the problem, which we call likelihood-free (or simulation-based) hypothesis testing, where access to ℙ and ℚ (which are a priori only known to belong to a large non-parametric family P) is given through n iid samples from each. We demostrate existence of a fundamental trade-off between n and m given by nm ≍ n²_𝖦𝗈𝖥(ϵ,P), where n_𝖦𝗈𝖥 is the minimax sample complexity of testing between the hypotheses H₀: ℙ=ℚ vs H₁: 𝖳𝖵(ℙ,ℚ)≥ϵ. We show this for three non-parametric families P: β-smooth densities over [0,1]d, the Gaussian sequence model over a Sobolev ellipsoid, and the collection of distributions P on a large alphabet [k] with pmfs bounded by c/k for fixed c. The test that we propose (based on the L²-distance statistic of Ingster) simultaneously achieves all points on the tradeoff curve for these families. In particular, when m≫1/ϵ² our test requires the number of simulation samples n to be orders of magnitude smaller than what is needed for density estimation with accuracy ≍ϵ (under 𝖳𝖵). This demonstrates the possibility of testing without fully estimating the distributions.</p>
+      </span>
+
+    </div>
+    </li>
+
+
+
+
+
 <li>
+<div id="chewi2022fisher">
 
-<div id="chewi2021rejection">
-  
-    <span class="title">Rejection sampling from shape-constrained distributions in sublinear time</span>
-    <span class="author">
-      
-        
-          
-            
-              
-                Chewi, Sinho,
-              
-            
-          
-        
-      
-        
-          
-            
-              <em>Gerber, Patrik</em>,
-            
-          
-        
-      
-        
-          
-            
-              
-                Lu, Chen,
-              
-            
-          
-        
-      
-        
-          
-            
-              
-                Gouic, Thibaut Le,
-              
-            
-          
-        
-      
-        
-          
-            
-              
-                and Rigollet, Philippe
-              
-            
-          
-        
-      
+    <span class="title">Fisher information lower bounds for sampling</span>
+    <span class="author">Sinho Chewi, <em>Patrik Róbert Gerber</em>, Holden Lee and Chen Lu</span>
+
+    <span class="periodical"><em>arXiv:2210.02482</em> (2022)
     </span>
 
-    <span class="periodical">
-    
-      <em>AISTATS</em>
-    
-    
-      2022
-    
-    </span>
-  
 
   <span class="links">
-  
-    [<a href="#We%20consider%20the%20task%20of%20generating%20exact%20samples%20from%20a%20target%20distribution,%20known%20up%20to%20normalization,%20over%20a%20finite%20alphabet.%20The%20classical%20algorithm%20for%20this%20task%20is%20rejection%20sampling,%20and%20although%20it%20has%20been%20used%20in%20practice%20for%20decades,%20there%20is%20surprisingly%20little%20study%20of%20its%20fundamental%20limitations.%20In%20this%20work,%20we%20study%20the%20query%20complexity%20of%20rejection%20sampling%20in%20a%20minimax%20framework%20for%20various%20classes%20of%20discrete%20distributions.%20Our%20results%20provide%20new%20algorithms%20for%20sampling%20whose%20complexity%20scales%20sublinearly%20with%20the%20alphabet%20size.%20When%20applied%20to%20adversarial%20bandits,%20we%20show%20that%20a%20slight%20modification%20of%20the%20Exp3%20algorithm%20reduces%20the%20per-iteration%20complexity%20from%20O(K)%20to%20O(log%5E2%20K),%20where%20K%20is%20the%20number%20of%20arms." class="abstract">abstract</a>]
-  
-  
-    [<a href="http://arxiv.org/abs/2105.14166" target="_blank" rel="noopener noreferrer">arXiv</a>]
-  
-  
-  
-  
-  
-  
-  
+    [<a href="#chewi2022fisher_abstract" class="abstract">abstract</a>]
+    [<a href="https://arxiv.org/abs/2210.02482" target="_blank" rel="noopener noreferrer">arXiv</a>]
   </span>
 
   <!-- Hidden abstract block -->
-  
-  <span id="We consider the task of generating exact samples from a target distribution, known up to normalization, over a finite alphabet. The classical algorithm for this task is rejection sampling, and although it has been used in practice for decades, there is surprisingly little study of its fundamental limitations. In this work, we study the query complexity of rejection sampling in a minimax framework for various classes of discrete distributions. Our results provide new algorithms for sampling whose complexity scales sublinearly with the alphabet size. When applied to adversarial bandits, we show that a slight modification of the Exp3 algorithm reduces the per-iteration complexity from O(K) to O(log^2 K), where K is the number of arms." class="abstract hidden">
-    <p>We consider the task of generating exact samples from a target distribution, known up to normalization, over a finite alphabet. The classical algorithm for this task is rejection sampling, and although it has been used in practice for decades, there is surprisingly little study of its fundamental limitations. In this work, we study the query complexity of rejection sampling in a minimax framework for various classes of discrete distributions. Our results provide new algorithms for sampling whose complexity scales sublinearly with the alphabet size. When applied to adversarial bandits, we show that a slight modification of the Exp3 algorithm reduces the per-iteration complexity from O(K) to O(log^2 K), where K is the number of arms.</p>
+
+  <span id="chewi2022fisher_abstract" class="abstract hidden">
+    <p>We prove two lower bounds for the complexity of non-log-concave sampling within the framework of Balasubramanian et al. (2022), who introduced the use of Fisher information (FI) bounds as a notion of approximate first-order stationarity in sampling. Our first lower bound shows that averaged LMC is optimal for the regime of large FI by reducing the problem of finding stationary points in non-convex optimization to sampling. Our second lower bound shows that in the regime of small FI, obtaining a FI of at most ε² from the target distribution requires poly(1/ε) queries, which is surprising as it rules out the existence of high-accuracy algorithms (e.g., algorithms using Metropolis-Hastings filters) in this context.</p>
   </span>
-  
+
 </div>
 </li>
+
+
+
 <li>
-
-<div id="altschuler2021averaging">
-  
-    <span class="title">Averaging on the Bures-Wasserstein manifold: dimension-free convergence of gradient descent</span>
-    <span class="author">
-      
-        
-          
-            
-              
-                Altschuler, Jason M,
-              
-            
-          
-        
-      
-        
-          
-            
-              
-                Chewi, Sinho,
-              
-            
-          
-        
-      
-        
-          
-            
-              <em>Gerber, Patrik</em>,
-            
-          
-        
-      
-        
-          
-            
-              
-                and Stromme, Austin J
-              
-            
-          
-        
-      
-    </span>
-
-    <span class="periodical">
-    
-      <em>NeurIPS, Spotlight</em>
-    
-    
-      2021
-    
-    </span>
-  
-
-  <span class="links">
-  
-    [<a href="#We%20study%20first-order%20optimization%20algorithms%20for%20computing%20the%20barycenter%20of%20Gaussian%20distributions%20with%20respect%20to%20the%20optimal%20transport%20metric.%20Although%20the%20objective%20is%20geodesically%20non-convex,%20Riemannian%20GD%20empirically%20converges%20rapidly,%20in%20fact%20faster%20than%20off-the-shelf%20methods%20such%20as%20Euclidean%20GD%20and%20SDP%20solvers.%20This%20stands%20in%20stark%20contrast%20to%20the%20best-known%20theoretical%20results%20for%20Riemannian%20GD,%20which%20depend%20exponentially%20on%20the%20dimension.%20In%20this%20work,%20we%20prove%20new%20geodesic%20convexity%20results%20which%20provide%20stronger%20control%20of%20the%20iterates,%20yielding%20a%20dimension-free%20convergence%20rate.%20Our%20techniques%20also%20enable%20the%20analysis%20of%20two%20related%20notions%20of%20averaging,%20the%20entropically-regularized%20barycenter%20and%20the%20geometric%20median,%20providing%20the%20first%20convergence%20guarantees%20for%20Riemannian%20GD%20for%20these%20problems." class="abstract">abstract</a>]
-  
-  
-    [<a href="http://arxiv.org/abs/2106.08502" target="_blank" rel="noopener noreferrer">arXiv</a>]
-  
-  
-  
-  
-  
-  
-  
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span id="We study first-order optimization algorithms for computing the barycenter of Gaussian distributions with respect to the optimal transport metric. Although the objective is geodesically non-convex, Riemannian GD empirically converges rapidly, in fact faster than off-the-shelf methods such as Euclidean GD and SDP solvers. This stands in stark contrast to the best-known theoretical results for Riemannian GD, which depend exponentially on the dimension. In this work, we prove new geodesic convexity results which provide stronger control of the iterates, yielding a dimension-free convergence rate. Our techniques also enable the analysis of two related notions of averaging, the entropically-regularized barycenter and the geometric median, providing the first convergence guarantees for Riemannian GD for these problems." class="abstract hidden">
-    <p>We study first-order optimization algorithms for computing the barycenter of Gaussian distributions with respect to the optimal transport metric. Although the objective is geodesically non-convex, Riemannian GD empirically converges rapidly, in fact faster than off-the-shelf methods such as Euclidean GD and SDP solvers. This stands in stark contrast to the best-known theoretical results for Riemannian GD, which depend exponentially on the dimension. In this work, we prove new geodesic convexity results which provide stronger control of the iterates, yielding a dimension-free convergence rate. Our techniques also enable the analysis of two related notions of averaging, the entropically-regularized barycenter and the geometric median, providing the first convergence guarantees for Riemannian GD for these problems.</p>
-  </span>
-  
-</div>
-</li>
-<li>
-
 <div id="chewi2021query">
-  
+
     <span class="title">The query complexity of sampling from strongly log-concave distributions in one dimension</span>
-    <span class="author">
-      
-        
-          
-            
-              
-                Chewi, Sinho,
-              
-            
-          
-        
-      
-        
-          
-            
-              <em>Gerber, Patrik</em>,
-            
-          
-        
-      
-        
-          
-            
-              
-                Lu, Chen,
-              
-            
-          
-        
-      
-        
-          
-            
-              
-                Gouic, Thibaut Le,
-              
-            
-          
-        
-      
-        
-          
-            
-              
-                and Rigollet, Philippe
-              
-            
-          
-        
-      
+    <span class="author">Sinho Chewi, <em>Patrik Róbert Gerber</em>, Chen Lu, Thibaut Le Gouic and Philippe Rigollet</span>
+
+    <span class="periodical"><em>COLT</em> (2022)
     </span>
 
-    <span class="periodical">
-    
-      <em>COLT</em>
-    
-    
-      2022)
-    
-    </span>
-  
 
   <span class="links">
-  
-    [<a href="#We%20establish%20the%20first%20tight%20lower%20bound%20of%20%CE%A9(loglog%CE%BA)%20on%20the%20query%20complexity%20of%20sampling%20from%20the%20class%20of%20strongly%20log-concave%20and%20log-smooth%20distributions%20with%20condition%20number%20%CE%BA%C2%A0%20in%20one%20dimension.%20Whereas%20existing%20guarantees%20for%20MCMC-based%20algorithms%20scale%20polynomially%20in%20%CE%BA,%20we%20introduce%20a%20novel%20algorithm%20based%20on%20rejection%20sampling%20that%20closes%20this%20doubly%20exponential%20gap." class="abstract">abstract</a>]
-  
-  
+    [<a href="#chewi2021query_abstract" class="abstract">abstract</a>]
     [<a href="http://arxiv.org/abs/2105.14163" target="_blank" rel="noopener noreferrer">arXiv</a>]
-  
-  
-  
-  
-  
-  
-  
   </span>
 
   <!-- Hidden abstract block -->
-  
-  <span id="We establish the first tight lower bound of Ω(loglogκ) on the query complexity of sampling from the class of strongly log-concave and log-smooth distributions with condition number κ  in one dimension. Whereas existing guarantees for MCMC-based algorithms scale polynomially in κ, we introduce a novel algorithm based on rejection sampling that closes this doubly exponential gap." class="abstract hidden">
+
+  <span id="chewi2021query_abstract" class="abstract hidden">
     <p>We establish the first tight lower bound of Ω(loglogκ) on the query complexity of sampling from the class of strongly log-concave and log-smooth distributions with condition number κ  in one dimension. Whereas existing guarantees for MCMC-based algorithms scale polynomially in κ, we introduce a novel algorithm based on rejection sampling that closes this doubly exponential gap.</p>
   </span>
-  
+
 </div>
 </li>
+
+
 <li>
+<div id="chewi2021rejection">
 
-<div id="chewi2021gaussian">
-  
-    <span class="title">Gaussian discrepancy: a probabilistic relaxation of vector balancing</span>
-    <span class="author">
-      
-        
-          
-            
-              
-                Chewi, Sinho,
-              
-            
-          
-        
-      
-        
-          
-            
-              <em>Gerber, Patrik</em>,
-            
-          
-        
-      
-        
-          
-            
-              
-                Rigollet, Philippe,
-              
-            
-          
-        
-      
-        
-          
-            
-              
-                and Turner, Paxton
-              
-            
-          
-        
-      
-    </span>
+    <span class="title">Rejection sampling from shape-constrained distributions in sublinear time</span>
+    <span class="author">Sinho Chewi, <em>Patrik Róbert Gerber</em>, Chen Lu, Thibaut Le Gouic and Philippe Rigollet</span>
 
-    <span class="periodical">
-    
-      <em>Discrete Applied Mathematics</em>
-    
-    
-      2022
-    
-    </span>
-  
+    <span class="periodical"><em>AISTATS</em> (2022)</span>
+
 
   <span class="links">
-  
-    [<a href="#We%20introduce%20a%20novel%20relaxation%20of%20combinatorial%20discrepancy%20called%20Gaussian%20discrepancy,%20whereby%20binary%20signings%20are%20replaced%20with%20correlated%20standard%20Gaussian%20random%20variables.%20This%20relaxation%20effectively%20reformulates%20an%20optimization%20problem%20over%20the%20Boolean%20hypercube%20into%20one%20over%20the%20space%20of%20correlation%20matrices.%20We%20show%20that%20Gaussian%20discrepancy%20is%20a%20tighter%20relaxation%20than%20the%20previously%20studied%20vector%20and%20spherical%20discrepancy%20problems,%20and%20we%20construct%20a%20fast%20online%20algorithm%20that%20achieves%20a%20version%20of%20the%20Banaszczyk%20bound%20for%20Gaussian%20discrepancy.%20This%20work%20also%20raises%20new%20questions%20such%20as%20the%20Komlo%20%CC%81s%20conjecture%20for%20Gaussian%20discrepancy,%20which%20may%20shed%20light%20on%20classical%20discrepancy%20problems." class="abstract">abstract</a>]
-  
-  
-    [<a href="http://arxiv.org/abs/2109.08280" target="_blank" rel="noopener noreferrer">arXiv</a>]
-  
-  
-  
-  
-  
-  
-  
+    [<a href="#chewi2021rejection_abstract" class="abstract">abstract</a>]
+    [<a href="http://arxiv.org/abs/2105.14166" target="_blank" rel="noopener noreferrer">arXiv</a>]
   </span>
 
   <!-- Hidden abstract block -->
-  
-  <span id="We introduce a novel relaxation of combinatorial discrepancy called Gaussian discrepancy, whereby binary signings are replaced with correlated standard Gaussian random variables. This relaxation effectively reformulates an optimization problem over the Boolean hypercube into one over the space of correlation matrices. We show that Gaussian discrepancy is a tighter relaxation than the previously studied vector and spherical discrepancy problems, and we construct a fast online algorithm that achieves a version of the Banaszczyk bound for Gaussian discrepancy. This work also raises new questions such as the Komlo ́s conjecture for Gaussian discrepancy, which may shed light on classical discrepancy problems." class="abstract hidden">
-    <p>We introduce a novel relaxation of combinatorial discrepancy called Gaussian discrepancy, whereby binary signings are replaced with correlated standard Gaussian random variables. This relaxation effectively reformulates an optimization problem over the Boolean hypercube into one over the space of correlation matrices. We show that Gaussian discrepancy is a tighter relaxation than the previously studied vector and spherical discrepancy problems, and we construct a fast online algorithm that achieves a version of the Banaszczyk bound for Gaussian discrepancy. This work also raises new questions such as the Komlo ́s conjecture for Gaussian discrepancy, which may shed light on classical discrepancy problems.</p>
+  <span id="chewi2021rejection_abstract" class="abstract hidden">
+    <p>We consider the task of generating exact samples from a target distribution, known up to normalization, over a finite alphabet. The classical algorithm for this task is rejection sampling, and although it has been used in practice for decades, there is surprisingly little study of its fundamental limitations. In this work, we study the query complexity of rejection sampling in a minimax framework for various classes of discrete distributions. Our results provide new algorithms for sampling whose complexity scales sublinearly with the alphabet size. When applied to adversarial bandits, we show that a slight modification of the Exp3 algorithm reduces the per-iteration complexity from O(K) to O(log²K), where K is the number of arms.</p>
   </span>
-  
+
 </div>
 </li>
+
+
+<li>
+<div id="chewi2021gaussian">
+    <span class="title">Gaussian discrepancy: a probabilistic relaxation of vector balancing</span>
+    <span class="author">Sinho Chewi, <em>Patrik Róbert Gerber</em>, Philippe Rigollet and Paxton Turner</span>
+
+    <span class="periodical"> <em>Discrete Applied Mathematics</em> (2022)</span>
+
+
+  <span class="links">
+    [<a href="#chewi2021gaussian_abstract" class="abstract">abstract</a>]
+    [<a href="http://arxiv.org/abs/2109.08280" target="_blank" rel="noopener noreferrer">arXiv</a>]
+  </span>
+
+  <!-- Hidden abstract block -->
+
+  <span id="chewi2021gaussian_abstract" class="abstract hidden">
+    <p>We introduce a novel relaxation of combinatorial discrepancy called Gaussian discrepancy, whereby binary signings are replaced with correlated standard Gaussian random variables. This relaxation effectively reformulates an optimization problem over the Boolean hypercube into one over the space of correlation matrices. We show that Gaussian discrepancy is a tighter relaxation than the previously studied vector and spherical discrepancy problems, and we construct a fast online algorithm that achieves a version of the Banaszczyk bound for Gaussian discrepancy. This work also raises new questions such as the Komlo ́s conjecture for Gaussian discrepancy, which may shed light on classical discrepancy problems.</p>
+  </span>
+
+</div>
+</li>
+
+
+<li>
+<div id="altschuler2021averaging">
+
+    <span class="title">Averaging on the Bures-Wasserstein manifold: dimension-free convergence of gradient descent</span>
+    <span class="author">Jason M Altschuler, Sinho Chewi, <em>Patrik Róbert Gerber</em> and Austin J Stromme </span>
+
+    <span class="periodical"><em>NeurIPS, Spotlight</em> (2021)</span>
+
+
+  <span class="links">
+    [<a href="#altschuler2021averaging_abstract" class="abstract">abstract</a>]
+    [<a href="http://arxiv.org/abs/2106.08502" target="_blank" rel="noopener noreferrer">arXiv</a>]
+</span>
+
+  <!-- Hidden abstract block -->
+
+  <span id="altschuler2021averaging_abstract" class="abstract hidden">
+    <p>We study first-order optimization algorithms for computing the barycenter of Gaussian distributions with respect to the optimal transport metric. Although the objective is geodesically non-convex, Riemannian GD empirically converges rapidly, in fact faster than off-the-shelf methods such as Euclidean GD and SDP solvers. This stands in stark contrast to the best-known theoretical results for Riemannian GD, which depend exponentially on the dimension. In this work, we prove new geodesic convexity results which provide stronger control of the iterates, yielding a dimension-free convergence rate. Our techniques also enable the analysis of two related notions of averaging, the entropically-regularized barycenter and the geometric median, providing the first convergence guarantees for Riemannian GD for these problems.</p>
+  </span>
+
+</div>
+</li>
+
 </ol>
 </div>
 
@@ -470,138 +283,12 @@
 2. I spent a summer in the Statistics department of University of Oxford working on interacting particle systems under the supervision of Professor Paul Chleboun <small>[<a href="https://github.com/PatrikGerber/East-process/blob/master/East_process.pdf">pdf</a>]</small>
 3. I wrote a master's thesis on branching random walks with selection, supervised by Professor Julien Berestycki <small>[<a href="https://github.com/PatrikGerber/BRWs/blob/master/FINAL/final_version.pdf">pdf</a>]</small> -->
 
-<!--
+
+</article>
 
 
 
 
-<div class="project ">
-    <div class="thumbnail">
-        <a href="https://patrikgerber.github.io/projects/1_project/">
-        
-        <img class="thumbnail" src="https://patrikgerber.github.io/assets/img/12.jpg"/>
-            
-        <span>
-            <h1>Project 1</h1>
-            <br/>
-            <p>a project with a background image</p>
-        </span>
-        </a>
-    </div>
-</div>
-
-
-
-
-
-
-
-<div class="project ">
-    <div class="thumbnail">
-        <a href="https://patrikgerber.github.io/projects/2_project/">
-        
-        <img class="thumbnail" src="https://patrikgerber.github.io/assets/img/2.jpg"/>
-            
-        <span>
-            <h1>Project 2</h1>
-            <br/>
-            <p>a project with a background image</p>
-        </span>
-        </a>
-    </div>
-</div>
-
-
-
-
-
-
-<div class="project">
-    <div class="thumbnail">
-        <a href="https://unsplash.com" target="_blank">
-        
-        <div class="thumbnail blankbox"></div>
-            
-        <span>
-            <h1>Project 3</h1>
-            <br/>
-            <p>a project that redirects to another website</p>
-        </span>
-        </a>
-    </div>
-</div>
-
-
-
-
-
-
-<div class="project ">
-    <div class="thumbnail">
-        <a href="https://patrikgerber.github.io/projects/4_project/">
-        
-        <div class="thumbnail blankbox"></div>
-            
-        <span>
-            <h1>Project 4</h1>
-            <br/>
-            <p>another without an image</p>
-        </span>
-        </a>
-    </div>
-</div>
-
-
-
-
-
-
-
-<div class="project ">
-    <div class="thumbnail">
-        <a href="https://patrikgerber.github.io/projects/5_project/">
-        
-        <img class="thumbnail" src="https://patrikgerber.github.io/assets/img/1.jpg"/>
-            
-        <span>
-            <h1>Project 5</h1>
-            <br/>
-            <p>a project with a background image</p>
-        </span>
-        </a>
-    </div>
-</div>
-
-
-
-
-
-
-
-<div class="project ">
-    <div class="thumbnail">
-        <a href="https://patrikgerber.github.io/projects/6_project/">
-        
-        <div class="thumbnail blankbox"></div>
-            
-        <span>
-            <h1>Project 6</h1>
-            <br/>
-            <p>a project with no image</p>
-        </span>
-        </a>
-    </div>
-</div>
-
-
-
- -->
-
-  </article>
-
-  
-
-  
 
 </div>
 
@@ -614,9 +301,9 @@
     © Copyright 2022 .
     Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.
 
-    
-        Last updated: June 27 2022.
-    
+
+        Last updated: November 3 2022.
+
 
 <a class="icon" href="mailto:%70%72%67%65%72%62%65%72@%6D%69%74.%65%64%75"><i class="fas fa-envelope" style="font-size: 14px"></i></a>
     <!--  -->
