@@ -98,12 +98,56 @@
 <div>
   <ol class="bibliography">
     <li>
+    <div id="perceptron">
+
+        <span class="title">Density estimation using the perceptron</span>
+        <span class="author"><em>Patrik Róbert Gerber</em>, Tianze Jiang, Yury Polyanskiy and Rui Sun</span>
+
+        <span class="periodical"><em>arxiv:2312.17701</em> (2023)
+        </span>
+
+
+      <span class="links">
+        [<a href="#perceptron_abstract" class="abstract">abstract</a>]
+        [<a href="https://arxiv.org/abs/2312.17701" target="_blank" rel="noopener noreferrer">arXiv</a>]
+      </span>
+
+      <!-- Hidden abstract block -->
+
+      <span id="perceptron_abstract" class="abstract hidden">
+        <p>We propose a new density estimation algorithm. Given n i.i.d. samples from a distribution belonging to a class
+of densities on ℝ<sup>d</sup>, our estimator outputs any density in the class whose "perceptron
+discrepancy" with the empirical distribution is at most O(√d/√n).
+The perceptron discrepancy between two distributions is defined as the largest
+difference in mass that they place on any halfspace of ℝ<sup>d</sup>. It is shown that
+this estimator achieves expected total variation distance to the truth that is almost
+minimax optimal over the class of densities with bounded Sobolev norm and Gaussian
+mixtures. This suggests that regularity of the prior distribution could be an
+explanation for the efficiency of the ubiquitous step in machine learning that replaces optimization over large function spaces with simpler parametric
+classes (e.g. in the discriminators of GANs).
+</p>
+<p>
+We generalize the above to show that replacing the "perceptron discrepancy" with
+the generalized energy distance of Székeley-Rizzo further improves
+total variation loss. The generalized energy distance between empirical
+distributions is easily computable and
+differentiable, thus making it especially useful for fitting generative models.
+To the best of our knowledge, it is the first example of a distance with such
+properties for which there are minimax statistical guarantees.
+
+</p>
+      </span>
+
+    </div>
+    </li>
+
+    <li>
     <div id="robert2023kernel">
 
         <span class="title">Kernel-Based Tests for Likelihood-Free Hypothesis Testing</span>
         <span class="author"><em>Patrik Róbert Gerber</em>, Tianze Jiang, Yury Polyanskiy and Rui Sun</span>
 
-        <span class="periodical"><em>arXiv:2308.09043</em> (2023)
+        <span class="periodical"><em>NeurIPS</em> (2023)
         </span>
 
 
@@ -115,7 +159,7 @@
       <!-- Hidden abstract block -->
 
       <span id="robert2023kernel_abstract" class="abstract hidden">
-        <p>Given n observations from two balanced classes, consider the task of labeling an additional m inputs that are known to all belong to <i>one</i> of the two classes. Special cases of this problem are well-known: with complete knowledge of class distributions (n=∞) the problem is solved optimally by the likelihood-ratio test; when m=1 it corresponds to binary classification; and when m≈n it is equivalent to two-sample testing. The intermediate settings occur in the field of likelihood-free inference, where labeled samples are obtained by running forward simulations and the unlabeled sample is collected experimentally. In recent work it was discovered that there is a fundamental trade-off between m and n: increasing the data sample m reduces the amount n of training/simulation data needed. In this work we (a) introduce a generalization where unlabeled samples come from a mixture of the two classes -- a case often encountered in practice; (b) study the minimax sample complexity for non-parametric classes of densities under <i>maximum mean discrepancy</i> (MMD) separation; and (c) investigate the empirical performance of kernels parameterized by neural networks on two tasks: detection of the Higgs boson and detection of planted DDPM generated images amidst CIFAR-10 images. For both problems we confirm the existence of the theoretically predicted asymmetric m vs n trade-off.</p>
+        <p>Given n observations from two balanced classes, consider the task of labeling an additional m inputs that are known to all belong to <i>one</i> of the two classes. Special cases of this problem are well-known: with complete knowledge of class distributions (n=∞) the problem is solved optimally by the likelihood-ratio test; when m=1 it corresponds to binary classification; and when m≈n it is equivalent to two-sample testing. The intermediate settings occur in the field of likelihood-free inference, where labeled samples are obtained by running forward simulations and the unlabeled sample is collected experimentally. In recent work it was discovered that there is a fundamental trade-off between m and n: increasing the data sample m reduces the amount n of training/simulation data needed. In this work we (a) introduce a generalization where unlabeled samples come from a mixture of the two classes - a case often encountered in practice; (b) study the minimax sample complexity for non-parametric classes of densities under <i>maximum mean discrepancy</i> (MMD) separation; and (c) investigate the empirical performance of kernels parameterized by neural networks on two tasks: detection of the Higgs boson and detection of planted DDPM generated images amidst CIFAR-10 images. For both problems we confirm the existence of the theoretically predicted asymmetric m vs n trade-off.</p>
       </span>
 
     </div>
@@ -305,7 +349,7 @@ We study goodness-of-fit, two-sample (𝖳𝖲) and likelihood-free hypothesis t
   <li>18.821 — Mathematics Project Laboratory <small>(2023 Fall)</small></li>
   <li>18.650 — Fundamentals of Statistics <small>(2022 Fall, 2023 Spring)</small>
 </li>
-  <li>18.675/9.521/IDS.160 — Mathematical Statistics - A non-asymptotic approach <small>(2022 Spring)</small>
+  <li>18.656/9.521/IDS.160 — Mathematical Statistics - A non-asymptotic approach <small>(2022 Spring)</small>
 </li>
   <li>15.070J/6.265J — Discrete Probability and Stochastic Processes <small>(2021 Spring)</small>
 </li>
@@ -346,7 +390,7 @@ We study goodness-of-fit, two-sample (𝖳𝖲) and likelihood-free hypothesis t
     Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.
 
 
-        Last updated: September 4, 2023.
+        Last updated: January 1, 2024.
 
 
 <!--<a class="icon" href="mailto:%70%72%67%65%72%62%65%72@%6D%69%74.%65%64%75"><i class="fas fa-envelope" style="font-size: 14px"></i></a>
