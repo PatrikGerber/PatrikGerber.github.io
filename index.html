@@ -45,7 +45,7 @@
 
         <a class="page-link" href="https://patrikgerber.github.io/research/">Research</a><a class="page-link" href="https://patrikgerber.github.io/teaching/">Teaching</a>
         
-        <!-- <a class="page-link" href="https://patrikgerber.github.io/assets/pdf/CV.pdf">vitae</a> -->
+        <a class="page-link" href="https://patrikgerber.github.io/assets/pdf/CV.pdf">vitae</a>
 
       </div>
     </nav>  -->
@@ -79,14 +79,15 @@
 
   </div>
 
+<h4><u>About</u></h4>
+<p>I completed my PhD in Mathematics and Statistics at MIT under the supervision of <a href="https://math.mit.edu/~rigollet/">Philippe Rigollet</a>, my <a href="https://dspace.mit.edu/handle/1721.1/155358">thesis</a> is titled "Likelihood-Free Hypothesis Testing and Applications of the Energy Distance". Prior to MIT I obtained a Master’s in Mathematics and Statistics from Corpus Christi College at the University of Oxford. I am currently working as a quant at Citadel Securities in NYC. </p>
 
-<p>I am an Applied Mathematics PhD student at MIT, supervised by Prof. <a href="http://www-math.mit.edu/~rigollet/" target="_blank" rel="noopener noreferrer">Philippe Rigollet</a>. Prior to MIT I obtained a Master’s in Mathematics and Statistics from the University of Oxford. My recent work has focused on the theory of likelihood-free inference. 
-<!-- In my free time I enjoy playing <a href="https://www.youtube.com/user/GerberPatrik/videos">piano</a>. --></p>
+<p>In my free time I enjoy <a href="https://www.youtube.com/user/GerberPatrik/videos">playing piano</a>.</p>
 
   </article>
 
   <header class="post-header">
-    <h1 class="post-title">Research</h1>
+    <!-- <h1 class="post-title">Research</h1> -->
     <h5 class="post-description"></h5>
   </header>
 
@@ -94,6 +95,7 @@
     <!-- <div>
 
 </div> -->
+<h4><u>Publications</u></h4>
 
 <div>
   <ol class="bibliography">
@@ -136,6 +138,30 @@ To the best of our knowledge, it is the first example of a distance with such
 properties for which there are minimax statistical guarantees.
 
 </p>
+      </span>
+
+    </div>
+    </li>
+
+    <li>
+    <div id="gerberpoly">
+
+        <span class="title">Likelihood-free hypothesis testing</span>
+        <span class="author"><em>Patrik Róbert Gerber</em> and Yury Polyanskiy</span>
+
+        <span class="periodical"><em>IEEE Transactions on Information Theory</em> (2024)
+        </span>
+
+
+      <span class="links">
+        [<a href="#gerberpoly_abstract" class="abstract">abstract</a>]
+        [<a href="https://arxiv.org/abs/2211.01126" target="_blank" rel="noopener noreferrer">arXiv</a>]
+      </span>
+
+      <!-- Hidden abstract block -->
+
+      <span id="gerberpoly_abstract" class="abstract hidden">
+        <p>Consider the problem of testing Z ~ ℙᵐ vs Z ~ ℚᵐ from m samples. Generally, to achieve a small error rate it is necessary and sufficient to have m≍1/ϵ², where ϵ measures the separation between ℙ and ℚ in total variation (𝖳𝖵). Achieving this, however, requires complete knowledge of the distributions ℙ and ℚ and can be done, for example, using the Neyman-Pearson test. In this paper we consider a variation of the problem, which we call likelihood-free (or simulation-based) hypothesis testing, where access to ℙ and ℚ (which are a priori only known to belong to a large non-parametric family P) is given through n iid samples from each. We demostrate existence of a fundamental trade-off between n and m given by nm ≍ n²_𝖦𝗈𝖥(ϵ,P), where n_𝖦𝗈𝖥 is the minimax sample complexity of testing between the hypotheses H₀: ℙ=ℚ vs H₁: 𝖳𝖵(ℙ,ℚ)≥ϵ. We show this for three non-parametric families P: β-smooth densities over [0,1]ᵈ, the Gaussian sequence model over a Sobolev ellipsoid, and the collection of distributions P on a large alphabet [k] with pmfs bounded by c/k for fixed c. The test that we propose (based on the L²-distance statistic of Ingster) simultaneously achieves all points on the tradeoff curve for these families. In particular, when m≫1/ϵ² our test requires the number of simulation samples n to be orders of magnitude smaller than what is needed for density estimation with accuracy ≍ϵ (under 𝖳𝖵). This demonstrates the possibility of testing without fully estimating the distributions.</p>
       </span>
 
     </div>
@@ -192,29 +218,7 @@ We study goodness-of-fit, two-sample (𝖳𝖲) and likelihood-free hypothesis t
     </li>
 
 
-    <li>
-    <div id="gerberpoly">
-
-        <span class="title">Likelihood-free hypothesis testing</span>
-        <span class="author"><em>Patrik Róbert Gerber</em> and Yury Polyanskiy</span>
-
-        <span class="periodical"><em>arXiv:2211.01126</em> (2022)
-        </span>
-
-
-      <span class="links">
-        [<a href="#gerberpoly_abstract" class="abstract">abstract</a>]
-        [<a href="https://arxiv.org/abs/2211.01126" target="_blank" rel="noopener noreferrer">arXiv</a>]
-      </span>
-
-      <!-- Hidden abstract block -->
-
-      <span id="gerberpoly_abstract" class="abstract hidden">
-        <p>Consider the problem of testing Z ~ ℙᵐ vs Z ~ ℚᵐ from m samples. Generally, to achieve a small error rate it is necessary and sufficient to have m≍1/ϵ², where ϵ measures the separation between ℙ and ℚ in total variation (𝖳𝖵). Achieving this, however, requires complete knowledge of the distributions ℙ and ℚ and can be done, for example, using the Neyman-Pearson test. In this paper we consider a variation of the problem, which we call likelihood-free (or simulation-based) hypothesis testing, where access to ℙ and ℚ (which are a priori only known to belong to a large non-parametric family P) is given through n iid samples from each. We demostrate existence of a fundamental trade-off between n and m given by nm ≍ n²_𝖦𝗈𝖥(ϵ,P), where n_𝖦𝗈𝖥 is the minimax sample complexity of testing between the hypotheses H₀: ℙ=ℚ vs H₁: 𝖳𝖵(ℙ,ℚ)≥ϵ. We show this for three non-parametric families P: β-smooth densities over [0,1]d, the Gaussian sequence model over a Sobolev ellipsoid, and the collection of distributions P on a large alphabet [k] with pmfs bounded by c/k for fixed c. The test that we propose (based on the L²-distance statistic of Ingster) simultaneously achieves all points on the tradeoff curve for these families. In particular, when m≫1/ϵ² our test requires the number of simulation samples n to be orders of magnitude smaller than what is needed for density estimation with accuracy ≍ϵ (under 𝖳𝖵). This demonstrates the possibility of testing without fully estimating the distributions.</p>
-      </span>
-
-    </div>
-    </li>
+    
 
 
 <li>
@@ -338,13 +342,19 @@ We study goodness-of-fit, two-sample (𝖳𝖲) and likelihood-free hypothesis t
 </ol>
 </div>
 
-<header class="post-header">
-    <h1 class="post-title">Teaching</h1>
-    <h5 class="post-description"></h5>
-  </header>
 
+<p>See also my <a href="https://scholar.google.com/citations?user=kB9AcDEAAAAJ&hl=en">google scholar profile</a>.</p>
+
+<!-- <header class="post-header">
+    <h1 class="post-title">Teaching</h1> 
+    <h5 class="post-description"></h5>
+  </header> -->
+
+<h4><u>Teaching</u></h4>
+<p>During my Ph.D. I served as teaching assistant for the following courses:</p>
   <article class="post-content Teaching clearfix">
-    <h4 id="teaching-assistant">Teaching Assistant</h4>
+    <!-- <h4 id="teaching-assistant">Teaching Assistant</h4> -->
+
 <ul>
   <li>6.3720/6.3722 — Introduction to Statistical Data Analysis <small>(2024 Spring)</small></li>
   <li>18.821 — Mathematics Project Laboratory <small>(2023 Fall)</small></li>
@@ -358,9 +368,9 @@ We study goodness-of-fit, two-sample (𝖳𝖲) and likelihood-free hypothesis t
 </li>
 </ul>
 
-<h4 id="academic-mentor-at-mathroots-2020-2022">Academic mentor at √mathroots <small>(2020, 2022)</small>
-</h4>
-<p><a href="http://mathroots.mit.edu" target="_blank" rel="noopener noreferrer">√mathroots</a> is a mathematical talent accelerator summer program for high-potential high school students from underrepresented backgrounds or underserved communities.</p>
+<!-- <h4 id="academic-mentor-at-mathroots-2020-2022">Academic mentor at √mathroots <small>(2020, 2022)</small> </h4> -->
+<p>I also served as academic mentor at <a href="http://mathroots.mit.edu" target="_blank" rel="noopener noreferrer">√mathroots</a> <small>(2020, 2022)</small>, which is  a mathematical talent accelerator summer program for high-potential high school students from underrepresented backgrounds or underserved communities.</p>
+
 
 
   </article>
@@ -391,7 +401,7 @@ We study goodness-of-fit, two-sample (𝖳𝖲) and likelihood-free hypothesis t
     Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.
 
 
-        Last updated: March 24, 2024.
+        Last updated: August 8, 2024.
 
 
 <!--<a class="icon" href="mailto:%70%72%67%65%72%62%65%72@%6D%69%74.%65%64%75"><i class="fas fa-envelope" style="font-size: 14px"></i></a>
